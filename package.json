@@ -7,7 +7,7 @@
     "server":"npm start --prefix server",
     "client":"npm start --prefix client",
     "socket":"npm strat --prefix socket",
-    "watch":"npm run server & npm run client & npm run socket"
+    "start":"npm run server & npm run client & npm run socket"
   },
   "repository": {
     "type": "git",
