@@ -34,7 +34,9 @@ mongoose
   .then(() => app.listen(PORT, () => console.log(`Listening at Port ${PORT}`)))
   .catch((error) => console.log(`${error} did not connect`));
 
-
+app.get('/chat',(req,res)=>{
+  res.send('this my chat page')
+})
 app.use('/auth', AuthRoute);
 app.use('/user', UserRoute)
 app.use('/posts', PostRoute)
